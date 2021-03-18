@@ -9,6 +9,8 @@ const productsController = new ProductsController();
 const userController = new UserController();
 
 routes.post('/createproduct', productsController.create);
-routes.post('/createuser', userController.create);
+routes.post('/createuser', userController.createUser);
+routes.post('/authuser', userController.authUser);
+
 
 export default routes;
