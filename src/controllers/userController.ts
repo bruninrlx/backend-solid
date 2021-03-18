@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import CreateUserService from '../services/createUserService';
-import AuthenticateUserService from '../services/authenticateUserService';
+import AuthenticateUserService from '../services/AuthenticateUserService';
 
 export default class ProductsController{
   public async createUser(request: Request, response : Response): Promise<Response>{
